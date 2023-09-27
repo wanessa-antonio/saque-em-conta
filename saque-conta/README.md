@@ -1,18 +1,22 @@
-## Getting Started
+Santander Bootcamp 2023 - Backend Java - Desafios 
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Desafio de Código = Saque em Conta
 
-## Folder Structure
+Codifique o seguinte cenário.
 
-The workspace contains two folders by default, where:
+Um novo recurso para um sistema bancário foi analisada pela equipe de desenvolvimento e será uma das tarefas a serem trabalhadas durante a sprint, como desenvolvedor da empresa você recebeu os requisitos para a nova implementação que consiste em uma solução algorítmica que permita aos clientes realizarem saques em caixas eletrônicos. No entanto, existem algumas regras a serem seguidas para garantir que um saque possa ser realizado com sucesso.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Regras do saque:
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- Cada cliente digitará o valor do seu saldoTotal de sua conta bancária e o valorSaque.
+- Um saque só pode ser realizado se o saldoDisponível na conta for igual ou superior ao valor solicitado.
+- Se o saldo for suficiente, o valor solicitado deve ser subtraído do saldo disponível, indicando que o saque foi realizado.
+- Se o saldo for insuficiente, o saque não deve ser realizado e uma mensagem adequada deve ser exibida.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Entrada:
+A entrada consiste em dois valores inteiros que representam o total do saldo da conta e o valor do saque.
 
-## Dependency Management
+Saída:
+Se o saque for realizado com sucesso, exibir a mensagem "Saque realizado com sucesso! Novo saldo: {saldo}", onde {saldo} é o novo saldo disponível na conta.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Se o saque não for possível devido a saldo insuficiente, exibir a mensagem "Saldo insuficiente. Saque nao realizado!"
